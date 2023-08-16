@@ -3,8 +3,11 @@
     "baseUrl": ".",
     "paths": {
       "@interfaces/*": [
-        "./src/interfaces/*"
+        "./src/interfaces/*",
       ],
+      "@assets/*": [
+        "./src/assets/*",
+      ]
     },
     "target": "es5",
     "lib": [

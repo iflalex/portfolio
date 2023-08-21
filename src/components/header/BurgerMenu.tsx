@@ -13,9 +13,9 @@ export default function BurgerMenu() {
 
 
   return (
-    <div className='flex flex-col gap-1 hover:cursor-pointer' onClick={()=>{dispatch(setActive(!transition.active))}}>
+    <div className='md:hidden flex flex-col gap-1 hover:cursor-pointer' onClick={()=>{dispatch(setActive(!transition.active))}}>
       <div className={`${styleList} ${transition.active ? 'rotate-45 translate-y-[10px]' : ''}`} ></div>
-      <div className={`${styleList} ${transition.active ? 'translate-x-[-60px]' : ''}`}></div>
+      <div className={`${styleList} ${transition.active ? 'translate-x-[-100px]' : ''}`}></div>
       <div className={`${styleList} ${transition.active ? 'rotate-[-45deg] translate-y-[-5px]' : ''}`}></div>
     </div>
   )

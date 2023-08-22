@@ -20,12 +20,14 @@ export default function App(): React.ReactElement {
   })
 
   return (
-    <div className='min-h-screen grid grid-rows-[minmax(0,max-content),1fr]'>
+    <div className='h-screen grid grid-rows-[minmax(0,max-content),1fr]'>
       <Header />
-      <div className='md:static relative md:flex'>
-        <div className={`md:hidden absolute top-0 left-0 h-full w-full transition-all ${transition.active ? 'bg-[rgba(0,0,0,0.6)] z-20' : 'bg-none z-0'}`}></div>
+      <div className='lg:static relative lg:flex'>
+        <div className={`lg:hidden absolute top-0 left-0 h-full w-full transition-all ${transition.active ? 'bg-[rgba(0,0,0,0.6)] z-20' : 'bg-none z-0'}`}></div>
         <DrawerMenu {...links}/>
-        <Outlet />
+        <div className='w-full h-full relative'>
+          <Outlet/>
+        </div>
       </div>
     </div>
     

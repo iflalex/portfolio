@@ -1,5 +1,11 @@
+export interface ItemModel {
+  name:string,
+  background:string,
+  images: string[],
+  category:string
+}
+
 export interface ProjectsModel  {
-  itemsPicture: Array<string>,
-  index:number,
+  items: Array<ItemModel>,
   sizeContainer:number
 }

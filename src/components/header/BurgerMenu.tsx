@@ -9,14 +9,14 @@ export default function BurgerMenu() {
     return state.transitionSlice
   })
   const dispatch = useAppDispatch()
-  const styleList:string = 'w-9 h-1 bg-black transition-all ease-linear rounded-full'
+  const styleList:string = 'w-8 h-1 bg-black transition-all ease-linear rounded-full'
 
 
   return (
-    <div className='md:hidden flex flex-col gap-1 hover:cursor-pointer' onClick={()=>{dispatch(setActive(!transition.active))}}>
+    <div className='lg:hidden flex flex-col gap-1 hover:cursor-pointer' onClick={()=>{dispatch(setActive(!transition.active))}}>
       <div className={`${styleList} ${transition.active ? 'rotate-45 translate-y-[10px]' : ''}`} ></div>
       <div className={`${styleList} ${transition.active ? 'translate-x-[-100px]' : ''}`}></div>
-      <div className={`${styleList} ${transition.active ? 'rotate-[-45deg] translate-y-[-5px]' : ''}`}></div>
+      <div className={`${styleList} ${transition.active ? 'rotate-[-45deg] translate-y-[-5.5px]' : ''}`}></div>
     </div>
   )
 }

@@ -15,8 +15,7 @@ export default function Portfolio(): React.ReactElement {
     })
     
     return (
-      <div className='p-10 min-h-full flex flex-col items-center'>
-        <h2 className='text-2xl text-center mb-10'>Présentation de mes projets réalisé.</h2>
+      <div className='absolute top-0 left-0 overflow-scroll xs:p-10 pt-10 pb-10  h-full w-full flex flex-col items-center'>
         <Projects {...props}/>
       </div>
      )

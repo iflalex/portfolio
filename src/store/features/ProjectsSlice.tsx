@@ -3,22 +3,14 @@ import { createSlice} from "@reduxjs/toolkit";
 //Interface
 import {PropsModel} from "@interfaces/Props";
 import { ProjectsModel } from "@interfaces/Projects";
-//Assets 
 
 
 const initialState: PropsModel<ProjectsModel> = {
-  caroussel : {
-    itemsPicture : [
-      'https://www.pngplay.com/wp-content/uploads/3/Pomme-Transparentes-Gratuit-PNG.png',
-      'https://www.pngplay.com/wp-content/uploads/3/Pomme-Transparentes-Gratuit-PNG.png',
-      'https://www.pngplay.com/wp-content/uploads/3/Pomme-Transparentes-Gratuit-PNG.png',
-      'https://www.pngplay.com/wp-content/uploads/3/Pomme-Transparentes-Gratuit-PNG.png',
-      'https://www.pngplay.com/wp-content/uploads/3/Pomme-Transparentes-Gratuit-PNG.png',
-      'https://www.pngplay.com/wp-content/uploads/3/Pomme-Transparentes-Gratuit-PNG.png',
-      'https://www.pngplay.com/wp-content/uploads/3/Pomme-Transparentes-Gratuit-PNG.png',
-      'https://www.pngplay.com/wp-content/uploads/3/Pomme-Transparentes-Gratuit-PNG.png',
+  projects : {
+    items : [
+      {name:'Project_1', background:'https://i.goopics.net/darrdu.jpg', images:[], category:'mobile'},
+
     ],
-    index: 0,
     sizeContainer:300
   }
 }
@@ -26,13 +18,7 @@ const initialState: PropsModel<ProjectsModel> = {
 const ProjectsSlice = createSlice({
   name: "ProjectsSlice",
   initialState,
-  reducers: { 
-    increment: (state) => {
-      state.caroussel.index += 1
-    },
-  },
+  reducers: {},
 });
-
-export const {increment} = ProjectsSlice.actions
 
 export default ProjectsSlice.reducer;

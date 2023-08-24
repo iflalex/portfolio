@@ -9,7 +9,7 @@ export default function BurgerMenu() {
     return state.transitionSlice
   })
   const dispatch = useAppDispatch()
-  const styleList:string = 'w-8 h-1 bg-black transition-all ease-linear rounded-full'
+  const styleList:string = 'w-8 h-1 bg-white transition-all ease-linear rounded-full'
 
 
   return (

@@ -26,7 +26,9 @@ export default function App(): React.ReactElement {
         <div className={`lg:hidden absolute top-0 left-0 h-full w-full transition-all ${transition.active ? 'bg-[rgba(0,0,0,0.6)] z-20' : 'bg-none z-0'}`}></div>
         <DrawerMenu {...links}/>
         <div className='w-full h-full relative'>
-          <Outlet/>
+          <div className='absolute top-0 left-0 overflow-scroll p-10 pt-10 pb-10  h-full w-full flex flex-col items-center'>
+            <Outlet/>
+          </div>
         </div>
       </div>
     </div>

@@ -24,7 +24,7 @@ export default function DrawerMenu(props:LinksModel) {
         onClick={()=>{dispatch(setActive(!transition.active))}} 
         className={({ isActive }) => isActive ? "active" : ""}
         >
-          <li className='text-lg md:text-xl'>{item}</li>
+          <li className='text-lg lg:text-xl'>{item}</li>
         </NavLink>
       })}
     </div>

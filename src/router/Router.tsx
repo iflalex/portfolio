@@ -4,18 +4,24 @@ import { ReactElement } from 'react';
 import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 //Routes
 import App from '../App';
+import Biography from 'src/views/Biography';
 import Portfolio from 'src/views/Portfolio';
-import Certificates from '../views/Certificates';
 import Contact from '../views/Contact';
-import DetailsProjet from 'src/views/DetailsProject';
+import DetailsProject from '../views/DetailsProject';
+import Error from 'src/views/Error';
+
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App/>}>
-      <Route index element={<Portfolio/>} />
-      <Route path="/Details" element={<DetailsProjet/>} />
-      <Route path="/Diplomes" element={<Certificates/>} />
-      <Route path="/Contact" element={<Contact/>} />
+    <Route>
+      <Route path="/" element={<App/>}>
+        <Route index element={<Biography/>} />
+        <Route path="/Portfolio" element={<Portfolio/>} />
+        <Route path="/Contact" element={<Contact/>} />
+      </Route>
+      <Route path="/Details/:name" element={<DetailsProject/>} />
+      <Route path="*" element={<Error/>} />
     </Route>
     
   )

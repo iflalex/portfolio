@@ -6,8 +6,8 @@ import LinksModel from "@interfaces/Links";
 
 const initialState: LinksModel = {
   links : [
+    'Biographie',
     'Portfolio',
-    'Diplomes',
     'Contact'
   ]
 }

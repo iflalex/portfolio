@@ -1,11 +1,16 @@
+
+
 export interface ItemModel {
   name:string,
   background:string,
+  technologies:string,
+  link?:string,
   images: string[],
   category:string
 }
 
 export interface ProjectsModel  {
   items: Array<ItemModel>,
-  sizeContainer:number
+  active:boolean,
+  pictureActive:string,
 }

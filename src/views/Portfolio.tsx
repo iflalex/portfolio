@@ -15,9 +15,7 @@ export default function Portfolio(): React.ReactElement {
     })
     
     return (
-      <div className='absolute top-0 left-0 overflow-scroll xs:p-10 pt-10 pb-10  h-full w-full flex flex-col items-center'>
-        <Projects {...props}/>
-      </div>
+      <Projects {...props}/>
      )
   
 }

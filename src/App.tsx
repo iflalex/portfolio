@@ -8,6 +8,7 @@ import DrawerMenu from './components/header/DrawerMenu';
 import { useAppSelector } from './store/hooks';
 import LinksModel from '@interfaces/Links';
 import TransitionModel from '@interfaces/Transition';
+import Message from './components/contact/Message';
 
 
 export default function App(): React.ReactElement {
@@ -29,7 +30,9 @@ export default function App(): React.ReactElement {
           <div className='absolute top-0 left-0 overflow-scroll p-10 pt-10 pb-10  h-full w-full flex flex-col items-center'>
             <Outlet/>
           </div>
+          <Message/>
         </div>
+        
       </div>
     </div>
     

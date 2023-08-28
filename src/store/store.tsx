@@ -3,13 +3,15 @@ import { configureStore } from '@reduxjs/toolkit'
 import LinkReducer from './features/LinkSlice';
 import ProjectsReducer from './features/ProjectsSlice';
 import TransitionSlice from './features/TransitionSlice';
+import ContactSlice from './features/ContactSlice';
 
 export const store = configureStore({
   reducer: {
     //Data Accès
     linkSlice: LinkReducer,
     projectsSlice: ProjectsReducer,
-    transitionSlice: TransitionSlice
+    transitionSlice: TransitionSlice,
+    contactSlice: ContactSlice,
   }
 })
 

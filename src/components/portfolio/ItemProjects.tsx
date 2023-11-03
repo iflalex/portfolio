@@ -10,7 +10,7 @@ export default function ItemProjects(item:ItemModel) {
   const navigate = useNavigate()
 
   function redirect(){
-    item.link ? navigate(item.link) : navigate(`/Details/${item.name}`)
+    item.link ? window.location.replace(item.link) : navigate(`/Details/${item.name}`)
   }
   return (
     <>

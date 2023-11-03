@@ -8,8 +8,7 @@ import { ProjectsModel } from "@interfaces/Projects";
 const initialState: PropsModel<ProjectsModel> = {
   projects : {
     items : [
-      
-      
+      {name:'Clone air-bnb', background:`${require('../../assets/background_clone_airbnb.png')}`, technologies:'React/Typescript, Redux, TailWind, Firebase...', link:'https://baba.fr',images:[], category:'web'}
     ],
     active: false,
     pictureActive: ''
